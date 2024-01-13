@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+    
+    
+}
+
+nav{
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    z-index: 999;
+}
+
+nav.logo{
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+
+}
+.hero-content h3{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+
+}
+.hero{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(digital-marketer.jpg);
+    background-size: cover;
+    bakground-repate: no-repeat;
+    position: relative;
+    
+
+}
+.nav-links{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+
+}
+.nav-links li{margin-left: 20px;
+}
+    
+    .nav-links a{
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+    .nav-links a:hover{
+        color: #7f00ff;
+    }
+    .login-button{
+        font-size: 16px;
+        text-decoration: none;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        background-color: #7f00ff;
+        transition: background-color 0.3s ease;
+    }
+    .login-button:hover{
+        background-color: #9933ff;
+
+    }
+    
+    .hero-content-h1{
+        text-align: center;
+        text-decoration: none;
+        color: #9e9494;
+        padding: 12px 12px;
+        font-size: 20px;
+    }
+    
+    .hero-content-p{
+        color: rgb(95, 44, 44);
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .hero-content-button{
+        display: inline-block;
+        text-align: center;
+        padding: 12px 24px;
+        background-color: #dfd8e6;
+        font-size: 16px;
+        margin: 50px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+    .hero-content-button:hover:hover{
+        background-color: #9933ff;
+        border: 1px solid #f44336;
+        background: #f44336;
+        transition: 1s;
+    }
+    @media (max-width: 700px)
+    {
+        .text-box h1{
+            font-size: 20px;
+        }
+    } 
+
+    .next h2 span{
+        color: #f44336;
+        text-align: center;
+        text-decoration: none;
+        
+        
+        
+    }
+    .next h2{
+        display: flex;
+        text-align: center;
+        margin-top: 10px;
+        bottom: 10px;
+        padding: 100px ;
+        display: block;
+    }
+    .next btn{
+        display: inline-block;
+        text-align: center;
+        padding: 12px 24px;
+        background-color: #dfd8e6;
+        font-size: 16px;
+        margin: 100px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+        .next p{
+            
+        }
+    
