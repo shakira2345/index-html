@@ -65,21 +65,23 @@ nav.logo{
     .nav-links a:hover{
         color: #7f00ff;
     }
-    .login-button{
+    .button{
         font-size: 16px;
         text-decoration: none;
         color: #fff;
         padding: 8px 16px;
         border-radius: 4px;
-        background-color: #7f00ff;
+        background-color: #d30c70;
         transition: background-color 0.3s ease;
     }
-    .login-button:hover{
-        background-color: #9933ff;
+    .button:hover{
+        background-color: #580688;
 
     }
-    
-    .hero-content-h1{
+    .hero-content{
+        text-align: center;
+    }
+    .hero-content h1{
         text-align: center;
         text-decoration: none;
         color: #9e9494;
@@ -87,12 +89,12 @@ nav.logo{
         font-size: 20px;
     }
     
-    .hero-content-p{
-        color: rgb(95, 44, 44);
+    .hero-content p{
+        color: rgb(6, 235, 44);
         font-size: 17px;
         margin-bottom: 20px;
     }
-    .hero-content-button{
+    .hero-content.button{
         display: inline-block;
         text-align: center;
         padding: 12px 24px;
@@ -103,14 +105,15 @@ nav.logo{
         text-decoration: none;
         border-radius: 4px;
         transition: background-color 0.3s ease;
+        
     }
-    .hero-content-button:hover:hover{
+    .hero-content.button:hover{
         background-color: #9933ff;
         border: 1px solid #f44336;
         background: #f44336;
         transition: 1s;
     }
-    @media (max-width: 700px)
+    @media (max-width: 900px)
     {
         .text-box h1{
             font-size: 20px;
@@ -125,27 +128,262 @@ nav.logo{
         
         
     }
+    .next p{
+        text-align: center;
+        font-size: 14px;
+    }
+    
     .next h2{
         display: flex;
         text-align: center;
         margin-top: 10px;
         bottom: 10px;
-        padding: 100px ;
+        padding: 10px ;
         display: block;
     }
-    .next btn{
-        display: inline-block;
+    .next .button{
+        display: content;
         text-align: center;
         padding: 12px 24px;
         background-color: #dfd8e6;
         font-size: 16px;
-        margin: 100px;
-        color: #fff;
+        margin: 10px;
+        color: #753131;
         text-decoration: none;
         border-radius: 4px;
         transition: background-color 0.3s ease;
+        
+
     }
-        .next p{
-            
+           
+    .next h2::after{
+        content: "";
+        height: 4px;
+        width: 230px;
+        display: block;
+        margin: auto;
+    }
+    .service{
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 1% 1%;
+        padding: 10px 90px;
+        background-color: #efefef;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .card:hover{
+        background-color: #b8d4de;
+        transform: 0,4s ease;
+    }
+    .card .icon{
+        font-size: 35px;
+        margin-bottom: 5%;
+
+    }
+
+    .card h2{
+        font-size: 28px;
+        color:#c94f4f;
+        margin-bottom: 20px;
+
+
+    }
+    .card p{
+        font-size: 12px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        color: #5e5e5e;
+    }
+    .button{
+        font-size: 15px;
+        text-decoration: none;
+        color: #0de6a5;
+        padding: 8px 12px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+    .button:hover{
+background-color: #f39406;
+transition: 0.4s ease;
+    }
+    @media screen and (max-width: 980px){
+        .service{
+            width: 85%px;
+            display: flex;
+            flex-direction: column;
+    } 
+    }
+
+
+    .container button{
+            bottom: 400px;
+            text-align: center;
+        font-size: 15px;
+            text-decoration: none;
+            color: #0de6a5;
+            padding: 8px 12px;
+            border-radius: 5px;
+            letter-spacing: 1px;
         }
+        .button:hover{
+    background-color: #f39406;
+    transition: 0.4s ease;
+    }
+     .portfolio h2 span{
+        color: #f44336;
+        text-align: center;
+        text-decoration: none;
+        
+        
+        
+    }
+    .portfolio h2{
+        display: flex;
+        text-align: center;
+        margin-top: 10px;
+        bottom: 10px;
+        padding: 40px ;
+        display: block;
+
+    }
+    .portfolio .button{
+        margin: 100%, 100%;
+        padding: 10px, 70px;
+    }
+    .item{
+        display: grid;
+        grid-auto-columns: auto;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 20px;
+        grid-row-gap: 30px;
+
+    }
+    .item img{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 1% 1%;
+        padding: 10px 0px;
+        background-color: #efefef;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .item img:hover{
+        transition: scale(1.04);
+    }
+    @media  screen and (max-width: 600px) {
+        .item{
+            grid-template-columns: repeat(1,);
+
+    }
+        
+    }
+    .team-section{
+        width: 100%;
+    }
+    .team-section .container{
+        width: 80%;
+        margin: auto;
+    }
+    .team-section .container .row{
+        width: 60%;
+        margin: auto;
+    }
+    .team-section .container .row .title{
+        text-align: center;
+        margin: 50px;
+    }
+    .team-section .container .row .title h1{
+        font-size: 35px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: black;
+    }
+    .team-section .container .row .title span{
+        color: red;
+    }
+    .team-section .container .row .title p{
+     font-size: 18px;
+     font-family: sans-serif;
+     margin: 30px 0px;
+     color: #a3a3a3;
+    }
+    .team-card{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3);
+        grid-gap: 10px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin: 40px;
+    }
     
+    .team-section .card{
+        width: 800px;
+        height: 400px;
+        background-color: #af6e6e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px, 10px;
+        padding: 20px, 90;
+        cursor: pointer;
+
+    }
+    .team-section  .container   .team-card .card:hover{
+        background-color: #f3f3f3;
+        transition: 0.3s ease;
+    }
+    .card img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        border: 6px solid #fff;
+    }
+    .team-section .container  .team-card  .card .content{
+        width: 100%;
+        text-align: center;
+    }
+    h3{
+        font-size: medium;
+        text-align: center;
+    }
+    h4{
+        font-size: 15px;
+        margin: 10px;
+        letter-spacing: 1.5px;
+        color: #4fc9c3;
+    }
+    p{
+        font-size: 8px;
+        margin: 16px 0px;
+        line-height: 1.5px;
+        color: #c94f4f;
+    }
+    @media screen and (max-width: 980px){
+         .team-section  .card{
+            width 800px; 
+    } 
+}
+
+    
+    
+    
+   
